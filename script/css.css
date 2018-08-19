@@ -1,0 +1,81 @@
+.player1, .player2{
+    display: inline-block;
+}
+
+.card{
+    background-size: cover;
+    width: 100px;
+    height: 140px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.card #player1c1 #player1c2 {
+    display: inline-block;
+}
+
+#button {
+    cursor: pointer;
+    color: black;
+    font-weight: 800 ;
+    width: 110px;
+    height: 33px;
+    margin: 10px 0 20px 0; 
+    outline:none;
+    background-color: gray;
+    border: none;
+    border-radius: 4px;
+
+}
+
+#button:hover{
+    background-color: threedface;
+}
+#button:active{
+    background-color: activecaption;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    /*margin: 30px;*/
+    /*background-color: lightgray;*/
+    padding: 50px;
+    /*border-radius: 6px;*/
+
+}
+
+
+.lightbox{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.winner{
+    z-index: 1000;
+    position: fixed;
+    left: 50%;
+    margin-left:-200px;
+    top: 20%;
+    border: 1px solid #999;
+    width: 400px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0px 0px 50px #444;
+}
+
+#winnerBlock{
+    display: none;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Black Jack</title>
+
+        <link href="script/w3.css" rel="stylesheet" type="text/css"/> 
+        <link href="script/css.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body onload="blackJack();">
+<center>
+
+        <div id="winnerBlock">
+
+            <table class="winner w3-center">
+                <tr>
+                    <td><h1 id="winner"></h1></td>
+                </tr>
+                <tr>
+                    <td> <input style="z-index: 10000;" type="button" value="new game" id="button" onclick="newGame();"/></td>
+                </tr>
+            </table>
+
+
+
+            <div class="lightbox"></div>
+        </div>
+
+
+        <div class="container">
+
+            <input type="button" value="new card" id="button" onclick="addNewCard();"/>
+            <input type="button" value="hold" style="background-color: red; color: white" id="button" onclick="Hold();"/>
+
+            <table id="player1">
+                <tr>
+                    <td id="newCard1"></td>
+                </tr>
+                <tr>
+                    <td><p>The player score is <span id="scorePlayer"></span></p></td>
+                </tr>
+            </table>
+
+            <table id="player2">
+                <tr>
+                    <td id="newCard2"></td>
+                </tr>
+                <tr>
+                    <td><p>The dealer score is <span id="scoreDealer"></span></p></td>
+                </tr>
+            </table>
+
+        </div>
+</center>
+    </body>
+    <script src="script/js.js" type="text/javascript"></script>
+</html>
